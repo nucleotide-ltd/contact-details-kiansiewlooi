@@ -69,20 +69,22 @@ body {
 /* Landscape (Scrollable Card, Top Aligned) */
 @media (max-width: 768px) and (orientation: landscape) {
   body {
+    display: block;
     justify-content: flex-start;
     align-items: flex-start;
   }
 
   .container {
     width: 100vw;
-    height: 100dvh;
+    height: auto;
     max-width: none;
-    max-height: none;
+    max-height: 100dvh;
     border-radius: 0;
     padding: 2em 1.5em;
     overflow-y: auto;
     box-sizing: border-box;
     display: flex;
+    -webkit-overflow-scrolling: touch;
     flex-direction: column;
     justify-content: flex-start;
     align-items: center;
