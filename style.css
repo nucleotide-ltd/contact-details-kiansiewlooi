@@ -29,8 +29,6 @@ body {
   flex-direction: column;
   -webkit-overflow-scrolling: touch;
   display: block;
-  justify-content: flex-start;
-  align-items: center;
   overflow-y: auto;
 }
 
