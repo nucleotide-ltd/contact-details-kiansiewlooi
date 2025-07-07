@@ -30,6 +30,7 @@ body {
   -webkit-overflow-scrolling: touch;
   justify-content: center;
   align-items: center;
+  overflow-y: auto;
 }
 
 /* Portrait (iOS 16 Safe + Centered) */
