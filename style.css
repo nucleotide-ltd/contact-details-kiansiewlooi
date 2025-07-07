@@ -35,7 +35,6 @@ body {
 @media (max-width: 768px) {
   html, body {
     height: 100dvh;
-  
   }
 
   .container {
