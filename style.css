@@ -76,7 +76,6 @@ body {
   
   body {
     display: block;
-    justify-content: flex-start;
     align-items: flex-start;
   }
 
@@ -92,7 +91,6 @@ body {
     display: block;
     -webkit-overflow-scrolling: touch;
     flex-direction: column;
-    justify-content: flex-start;
     align-items: center;
   }
 
