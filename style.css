@@ -33,10 +33,6 @@ body {
 
 /* Mobile-only override for full height */
 @media (max-width: 768px) {
-  html, body {
-
-  }
-
   .container {
     margin: 2em;
     padding: 1.5em;
