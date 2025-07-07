@@ -10,6 +10,8 @@ body {
   justify-content: center;
   align-items: center;
   text-align: left;
+  height: 100vh;       /* lock height */
+  width: 100vw;
 }
 
 .poppins {
