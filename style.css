@@ -34,7 +34,7 @@ body {
 }
 
 /* Portrait (iOS 16 Safe + Centered) */
-@media (max-width: 768px) and (orientation: portrait) {
+@media (max-width: 768px) and (orientation: portrait) and (max-height: 500px) {
 
   body {
     flex-direction: column;
