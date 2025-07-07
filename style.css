@@ -10,7 +10,7 @@ body {
   font-family: Poppins, sans-serif;
   background: url('backgroundpic.jpg') center center / cover no-repeat;
   color: white;
-  display: flex;
+  display: block;
   justify-content: center;
   align-items: center;
   text-align: left;
@@ -41,10 +41,10 @@ body {
 
 @media (max-width: 768px) and (orientation: landscape) {
   .container {
-    overflow-x: hidden;
     overflow-y: auto;
-    max-height: 90dvh;
-    max-width: 90vw;
+    max-height: 100dvh;
+    width: 100vw;
+    max-width: none;
     padding: 2.0em;
     margin: 1.0em;
     box-sizing: border-box;
@@ -58,6 +58,7 @@ body {
 .profile-image {
   display: flex;
   justify-content: center;
+  margin-top: 1.2em;
   margin-bottom: 1.2em;
 }
 
