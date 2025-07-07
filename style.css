@@ -2,7 +2,7 @@ html, body {
   margin: 0;
   padding: 0;
   height: 100dvh;
-  width: 100vw;
+  width: 100dvw;
   overflow: hidden;
 }
 
@@ -34,6 +34,7 @@ body {
 @media (max-width: 768px) {
   .container {
     padding: 2.0em;
+    overflow-x: auto;
   }
 }
 
