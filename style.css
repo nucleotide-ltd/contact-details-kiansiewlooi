@@ -3,6 +3,8 @@ html, body {
   width: 100vw;
   font-family: 'Poppins', sans-serif;
   overflow: hidden;
+  margin: 0;
+  padding: 0;
 }
 
 body {
@@ -19,7 +21,7 @@ body {
 .container {
   height: auto;
   max-height: 90vh;
-  width: 100%;
+  width: 90%;
   max-width: 360px;
   padding: 1.2em 0.6em;
   background: rgba(0, 0, 0, 0.65);
