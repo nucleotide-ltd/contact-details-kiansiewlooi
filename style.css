@@ -1,5 +1,5 @@
 html, body {
-  height: 100vh;
+  height: 100dvh;
   width: 100vw;
   margin: 0;
   padding: 0;
@@ -8,17 +8,16 @@ html, body {
 }
 
 body {
-  min-height: 100vh;
-  color: white;
   display: flex;
   justify-content: center;
   align-items: center;
   text-align: left;
   background: url('backgroundpic.jpg') center center / cover no-repeat;
+  color: white;
 }
 
+/* Container Defaults (Desktop + Portrait) */
 .container {
-  -webkit-overflow-scrolling: touch;
   width: 90%;
   max-width: 360px;
   padding: 1.5em;
@@ -31,81 +30,88 @@ body {
   justify-content: flex-start;
   align-items: center;
   overflow: hidden;
+  -webkit-overflow-scrolling: touch;
 }
 
+/* Portrait (iOS 16 Safe + Centered) */
 @media (max-width: 768px) and (orientation: portrait) {
-
-  html, body {
-    height: 100dvh;
-    overflow: hidden;
-  }
   body {
-    display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
   }
 
   .container {
-    padding: 1.5em
-    margin-top: 0;
-    margin-bottom: 0;
     height: auto;
-    max-height: 80dvh; /* Slight breathing room from URL bar */
+    max-height: 88dvh;
+    margin: 0;
     overflow-y: auto;
   }
-  
+
   .profile-image img {
     width: 120px;
     height: 120px;
   }
 
-  .h1 {
+  h1 {
+    font-size: 1.1em;
+  }
+
+  .subtitle, .position, .contact-item, .download-button a {
     font-size: 0.9em;
   }
 
-  .subtitle, .position, .contact-item {
-    font-size: 0.8em;
-  }
-
   .download-button a {
-    font-size: 0.8em;
     padding: 0.6em 1.2em;
   }
 }
-  
+
+/* Landscape (Scrollable Card, Top Aligned) */
 @media (max-width: 768px) and (orientation: landscape) {
-  html, body {
-    height: 100dvh;
-    width: 100vw;
-    overflow: hidden;
-  }
-  
   body {
-    justify-content: flex-start; /* scroll starts from top */
+    justify-content: flex-start;
     align-items: flex-start;
   }
 
   .container {
     width: 100vw;
     height: 100dvh;
+    max-width: none;
+    max-height: none;
+    border-radius: 0;
     padding: 2em 1.5em;
-    border-radius: 0;          /* ✅ full screen card feel */
     overflow-y: auto;
     box-sizing: border-box;
-    -webkit-overflow-scrolling: touch;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
     align-items: center;
   }
+
+  .profile-image img {
+    width: 100px;
+    height: 100px;
+  }
+
+  h1 {
+    font-size: 1em;
+  }
+
+  .subtitle, .position, .contact-item, .download-button a {
+    font-size: 0.85em;
+  }
+
+  .download-button a {
+    padding: 0.5em 1em;
+  }
 }
+
+/* Shared Styling Below */
 
 .profile-image {
   display: flex;
   justify-content: center;
-  margin-top: 1.2em;
-  margin-bottom: 1.2em;
+  margin: 1.2em 0;
 }
 
 .profile-image img {
@@ -115,14 +121,15 @@ body {
   border-radius: 20px;
 }
 
-.h1 {
+h1 {
   font-size: 1.1em;
-  margin: 0.2em 0;
+  font-weight: 600;
   text-align: center;
+  margin: 0.6em 0 0.3em 0;
 }
 
 .subtitle {
-  font-size: 1.0em;
+  font-size: 1em;
   opacity: 0.8;
   margin: 0.2em 0;
   text-align: center;
@@ -154,14 +161,13 @@ body {
   display: flex;
   align-items: center;
   gap: 0.8em;
-  font-size: 1.0em;
+  font-size: 1em;
   color: white;
 }
 
 .contact-item a {
   color: white;
   text-decoration: none;
-  text-align: left;
 }
 
 .contact-item a:hover {
@@ -180,22 +186,22 @@ body {
 
 .icon-wrapper i {
   color: white;
-  font-size: 1.0em;
+  font-size: 1em;
 }
 
 .download-button {
-  margin-top: 2em;
+  margin-top: 1em;
   display: flex;
   justify-content: center;
 }
 
 .download-button a {
   display: inline-flex;
-  align-items: center;         /* ✅ aligns icon and text vertically */
+  align-items: center;
   justify-content: center;
   gap: 0.6em;
   padding: 0.75em 1.5em;
-  border: 1.5px solid white;   /* ✅ white border */
+  border: 1.5px solid white;
   border-radius: 8px;
   background-color: rgba(255, 255, 255, 0.15);
   color: white;
@@ -205,5 +211,5 @@ body {
 
 .download-button a i {
   font-size: 1em;
-  line-height: 1;              /* ✅ ensures icon aligns with text */
+  line-height: 1;
 }
