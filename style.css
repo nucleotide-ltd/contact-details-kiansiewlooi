@@ -2,7 +2,8 @@ html, body {
   margin: 0;
   padding: 0;
   height: 100dvh;
-  width: 100dvw;
+  width: 100vw;
+  overflow: hidden;
 }
 
 body {
@@ -28,16 +29,22 @@ body {
   box-shadow: 0 8px 24px rgba(0, 0, 0, 0.4);
   justify-content: center; 
   flex-direction: column;
-  overflow-x: auto;
-  overflow-y: auto;
+
+}
+
+@media (max-width: 768px) {
+  .container {
+    padding: 2.0em;
+  }
 }
 
 /* Mobile-only override for full height */
-@media (max-width: 768px) {
+@media (max-width: 768px) and (orientation: landscape) {
   .container {
-    margin: 1.5em;
-    padding: 1.5em;
-    margin-top: 1.5em;
+    overflow-x: auto;
+    overflow-y: auto;
+    height: 100dvh;
+    padding: 2.0em;
   }
 }
 
@@ -61,14 +68,14 @@ h1 {
 }
 
 .subtitle {
-  font-size: 1.0em;
+  font-size: 0.9em;
   opacity: 0.8;
   margin: 0.2em 0;
   text-align: center;
 }
 
 .position {
-  font-size: 1.05em;
+  font-size: 1.0em;
   color: white;
   font-weight: 600;
   margin-bottom: 1.2em;
