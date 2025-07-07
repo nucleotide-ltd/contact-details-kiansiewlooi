@@ -43,8 +43,19 @@ body {
   }
 }
 
+@media (max-width: 768px) and (orientation: portrait) {
+  .container {
+    height: auto;
+    max-height: 95dvh;
+    overflow-y: auto;
+    margin: 1em;
+    padding: 1.5em;
+    box-sizing: border-box;
+  }
+}
+
 @media (max-width: 768px) and (orientation: landscape) {
-  body {
+  .body {
     justify-content: flex-start; /* scroll starts from top */
     align-items: flex-start;
   }
@@ -145,19 +156,30 @@ h1 {
 
 .download-button {
   margin-top: 2em;
-  padding: 0.75em 1.25em;
-  border: 1px solid rgba(255, 255, 255, 0.3);
-  border-radius: 8px;
-  background-color: rgba(255, 255, 255, 0.1);
-  text-align: center;
+  display: flex;
+  justify-content: center;
 }
 
 .download-button a {
-  color: white;
-  text-decoration: none;
-  font-size: 1em;
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  gap: 0.5em; /* space between icon and text */
+  gap: 0.6em;
+  padding: 0.75em 1.5em;
+  border: 1.5px solid white; /* ✅ match divider style */
+  border-radius: 8px;
+  background-color: rgba(255, 255, 255, 0.1);
+  color: white;
+  font-size: 1em;
+  text-decoration: none;
+}
+
+.download-button .icon-wrapper {
+  width: 28px;
+  height: 28px;
+  background-color: rgba(255, 255, 255, 0.15);
+  border-radius: 6px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
