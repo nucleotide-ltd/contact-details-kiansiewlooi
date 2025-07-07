@@ -68,14 +68,14 @@ h1 {
 }
 
 .subtitle {
-  font-size: 0.9em;
+  font-size: 1.0em;
   opacity: 0.8;
   margin: 0.2em 0;
   text-align: center;
 }
 
 .position {
-  font-size: 1.0em;
+  font-size: 1.05em;
   color: white;
   font-weight: 600;
   margin-bottom: 1.2em;
