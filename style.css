@@ -28,7 +28,7 @@ body {
   box-sizing: border-box;
   flex-direction: column;
   -webkit-overflow-scrolling: touch;
-  display: flex;
+  display: block;
   justify-content: flex-start;
   align-items: center;
   overflow-y: auto;
