@@ -35,10 +35,12 @@ body {
 
 /* Portrait (iOS 16 Safe + Centered) */
 @media (max-width: 768px) and (orientation: portrait) {
+
   body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    overflow-y: auto;
   }
 
   .container {
@@ -83,7 +85,7 @@ body {
     padding: 2em 1.5em;
     overflow-y: auto;
     box-sizing: border-box;
-    display: flex;
+    display: block;
     -webkit-overflow-scrolling: touch;
     flex-direction: column;
     justify-content: flex-start;
