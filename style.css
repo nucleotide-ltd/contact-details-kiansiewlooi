@@ -59,7 +59,7 @@ h1 {
 }
 
 .subtitle {
-  font-size: 0.95em;
+  font-size: 0.0em;
   opacity: 0.8;
   margin: 0.2em 0;
   text-align: center;
@@ -93,7 +93,7 @@ h1 {
   align-items: center;
   justify-content: flex-start; 
   gap: 0.8em;
-  font-size: 0.95em;
+  font-size: 1.0em;
   color: white;
 }
 
@@ -120,5 +120,5 @@ h1 {
 
 .icon-wrapper i {
   color: white;
-  font-size: 0.95em;
+  font-size: 1.0em;
 }
