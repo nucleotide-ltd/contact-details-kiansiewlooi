@@ -73,10 +73,11 @@ body {
   body {
     display: block;
     align-items: flex-start;
-    -webkit-overflow-scrolling: touch;
   }
 
   .container {
+    position: relative;
+    margin: 0;
     width: 100vw;
     height: auto;
     max-width: none;
