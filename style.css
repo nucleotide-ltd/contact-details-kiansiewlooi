@@ -31,7 +31,7 @@ body {
   box-shadow: 0 8px 24px rgba(0, 0, 0, 0.4);
   box-sizing: border-box;
   overflow-y: auto;
-  max-height: 100dvh;
+  max-height: 90vh;
 }
 
 @media (max-width: 768px) {
@@ -43,15 +43,21 @@ body {
   }
 }
 
-@media (orientation: landscape) {
+@media (max-width: 768px) and (orientation: landscape) {
+  body {
+    justify-content: flex-start; /* scroll starts from top */
+    align-items: flex-start;
+  }
+
   .container {
-    border-radius: 0;
     width: 100vw;
     height: 100dvh;
-    max-width: none;
-    max-height: none;
+    border-radius: 0;
     margin: 0;
     padding: 2em;
+    max-width: none;
+    max-height: none;
+    overflow-y: auto;
   }
 }
 
