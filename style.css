@@ -3,12 +3,11 @@ html, body {
   width: 100vw;
   margin: 0;
   padding: 0;
-  overflow: hidden;
   font-family: 'Poppins', sans-serif;
 }
 
 body {
-  display: block;
+  display: flex;
   text-align: left;
   background: url('backgroundpic.jpg') center center / cover no-repeat;
   color: white;
@@ -28,7 +27,7 @@ body {
   display: block;
   flex-direction: column;
   -webkit-overflow-scrolling: touch;
-  justify-content: center;
+  justify-content: flex-start;
   align-items: center;
   overflow-y: auto;
 }
