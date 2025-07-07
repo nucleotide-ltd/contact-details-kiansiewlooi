@@ -43,22 +43,22 @@ body {
 
   .container {
     height: auto;
-    max-height: 88dvh;
+    max-height: 95dvh;
     margin: 0;
     overflow-y: auto;
   }
 
   .profile-image img {
-    width: 120px;
-    height: 120px;
+    width: 100px;
+    height: 100px;
   }
 
   h1 {
-    font-size: 1.1em;
+    font-size: 0.9em;
   }
 
   .subtitle, .position, .contact-item, .download-button a {
-    font-size: 0.9em;
+    font-size: 0.8em;
   }
 
   .download-button a {
@@ -125,7 +125,7 @@ h1 {
   font-size: 1.2em;
   font-weight: 600;
   text-align: center;
-  margin: 0.6em 0 0.3em 0;
+  margin: 0.3em 0 0.3em 0;
 }
 
 .subtitle {
