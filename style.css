@@ -8,7 +8,6 @@ html, body {
 }
 
 body {
-  display: flex;
   text-align: left;
   background: url('backgroundpic.jpg') center center / cover no-repeat;
   color: white;
@@ -26,7 +25,6 @@ body {
   border-radius: 20px;
   box-shadow: 0 8px 24px rgba(0, 0, 0, 0.4);
   box-sizing: border-box;
-  display: flex;
   flex-direction: column;
   -webkit-overflow-scrolling: touch;
   justify-content: flex-start;
