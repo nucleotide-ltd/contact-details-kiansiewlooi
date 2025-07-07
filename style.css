@@ -8,13 +8,13 @@ html, body {
 }
 
 body {
-  text-align: left;
   background: url('backgroundpic.jpg') center center / cover no-repeat;
   color: white;
   display: flex;
   justify-content: center;
   align-items: center;
   overflow: hidden;
+  text-align: left;
 }
 
 /* Container Defaults (Desktop + Portrait) */
@@ -23,7 +23,7 @@ body {
   max-height: 90vh;
   width: 90%;
   max-width: 360px;
-  padding: 1.2em 1.5em;
+  padding: 1.2em 2em;
   background: rgba(0, 0, 0, 0.65);
   border-radius: 20px;
   box-shadow: 0 8px 24px rgba(0, 0, 0, 0.4);
