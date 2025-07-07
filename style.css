@@ -8,10 +8,12 @@ html, body {
 }
 
 body {
-  display: flex;
+  display: block;
   text-align: left;
   background: url('backgroundpic.jpg') center center / cover no-repeat;
   color: white;
+  justify-content: center;
+  align-items: center;
 }
 
 /* Container Defaults (Desktop + Portrait) */
@@ -23,7 +25,7 @@ body {
   border-radius: 20px;
   box-shadow: 0 8px 24px rgba(0, 0, 0, 0.4);
   box-sizing: border-box;
-  display: flex;
+  display: block;
   flex-direction: column;
   -webkit-overflow-scrolling: touch;
   justify-content: center;
