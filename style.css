@@ -19,7 +19,8 @@ body {
 
 /* Container Defaults (Desktop + Portrait) */
 .container {
-  height: 100vh;
+  height: auto;
+  max-height: 90vh;
   width: 90%;
   max-width: 360px;
   padding: 1.2em;
