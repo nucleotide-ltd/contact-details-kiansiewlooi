@@ -72,7 +72,6 @@ body {
 @media (max-width: 768px) and (orientation: landscape) {
   body {
     display: block;
-    align-items: flex-start;
   }
 
   .container {
@@ -81,7 +80,7 @@ body {
     width: 100vw;
     height: auto;
     max-width: none;
-    max-height: 100vh;
+    max-height: 100dvh;
     border-radius: 0;
     padding: 2em 1.5em;
     overflow-y: auto;
@@ -89,7 +88,6 @@ body {
     display: block;
     -webkit-overflow-scrolling: touch;
     flex-direction: column;
-    align-items: center;
   }
 
   .profile-image img {
