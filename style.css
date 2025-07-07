@@ -71,7 +71,8 @@ body {
     height: auto;
     max-height: 95dvh; /* Slight breathing room from URL bar */
     overflow-y: auto;
-
+  }
+  
   .profile-image img {
     width: 120px;
     height: 120px;
