@@ -34,7 +34,7 @@ body {
 /* Mobile-only override for full height */
 @media (max-width: 768px) {
   html, body {
-    height: 100dvh;
+    height: 90dvh;
   
   }
 
