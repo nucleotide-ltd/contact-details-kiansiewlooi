@@ -1,7 +1,8 @@
 html, body {
   margin: 0;
   padding: 0;
-  height: 100vh;
+  height: 100%;
+  width: 100%;
   overflow: hidden;
 }
 
@@ -20,8 +21,6 @@ body {
 }
 
 .container {
-  display: flex;
-  justify-content: center;
   align-items: center;
   background: rgba(0, 0, 0, 0.65);
   max-width: 360px;
@@ -30,6 +29,7 @@ body {
   box-shadow: 0 8px 24px rgba(0, 0, 0, 0.4);
 }
 
+/* Mobile-only override for full height */
 @media (max-width: 768px) {
   html, body {
     height: 100dvh;
@@ -37,11 +37,13 @@ body {
 
   .container {
     height: 100dvh;
+    box-sizing: border-box;
     flex-direction: column;
     max-height: 100dvh;
-    box-sizing: border-box;
+    display: flex;
     justify-content: center;  /* optional for layout control */
   }
+}
 
 .profile-image {
   display: flex;
