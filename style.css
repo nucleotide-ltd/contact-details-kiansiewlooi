@@ -75,6 +75,12 @@ body {
 }
   
 @media (max-width: 768px) and (orientation: landscape) {
+  html, body {
+    height: 100dvh;
+    width: 100vw;
+    overflow: hidden;
+  }
+  
   body {
     justify-content: flex-start; /* scroll starts from top */
     align-items: flex-start;
@@ -82,13 +88,16 @@ body {
 
   .container {
     width: 100vw;
-    height: 100vh;
-    border-radius: 0;
-    margin: 0;
-    padding: 2em;
-    max-width: none;
-    max-height: none;
+    height: 100dvh;
+    padding: 2em 1.5em;
+    border-radius: 0;          /* ✅ full screen card feel */
     overflow-y: auto;
+    box-sizing: border-box;
+    -webkit-overflow-scrolling: touch;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
   }
 }
 
