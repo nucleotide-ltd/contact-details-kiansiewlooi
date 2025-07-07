@@ -31,6 +31,7 @@ body {
   flex-direction: column;
 }
 
+/* Mobile-only override for full height */
 @media (max-width: 768px) {
   .container {
     padding: 2.0em;
@@ -38,10 +39,9 @@ body {
   }
 }
 
-/* Mobile-only override for full height */
 @media (max-width: 768px) and (orientation: landscape) {
   .container {
-    overflow-x: auto;
+    overflow-x: hidden;
     overflow-y: auto;
     height: 100dvh;
     padding: 2.0em;
