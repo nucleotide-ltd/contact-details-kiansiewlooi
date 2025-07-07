@@ -1,9 +1,12 @@
 BEGIN:VCARD
 VERSION:3.0
 FN:Kian Siew Looi
+N:Looi;Kian Siew;;;
 ORG:Nucleotide
 TITLE:Principal
-EMAIL:kian.siew@nucleotide.pro
-TEL:+6591489432
-URL:https://www.nucleotide.pro
+TEL;TYPE=work,voice:+65 9148 9432
+EMAIL;TYPE=internet:kian.siew@nucleotide.pro
+URL;TYPE=homepage:https://www.nucleotide.pro
+item1.URL;TYPE=LinkedIn:https://www.linkedin.com/in/kiansiewlooi
+item1.X-ABLabel:LinkedIn
 END:VCARD
