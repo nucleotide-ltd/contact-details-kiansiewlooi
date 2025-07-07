@@ -41,5 +41,15 @@
       </div>
     </div>
   </div>
+<script>
+  // Adjust height for mobile Safari viewport issue
+  document.documentElement.style.setProperty('--vh', `${window.innerHeight * 0.01}px`);
+</script>
+
+<style>
+  .container {
+    height: calc(var(--vh, 1vh) * 100);
+  }
+</style>
 </body>
 </html>
