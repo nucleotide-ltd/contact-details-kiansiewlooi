@@ -2,7 +2,7 @@ html, body {
   margin: 0;
   padding: 0;
   height: 100dvh;
-  width: 100vw;
+  width: 100dvw;
   overflow: hidden;
 }
 
@@ -29,6 +29,8 @@ body {
   box-shadow: 0 8px 24px rgba(0, 0, 0, 0.4);
   justify-content: center; 
   flex-direction: column;
+  overflow-x: auto;
+  overflow-y: auto;
 }
 
 /* Mobile-only override for full height */
