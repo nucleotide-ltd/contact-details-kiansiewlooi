@@ -10,7 +10,6 @@ body {
   min-height: 100vh;
   font-family: Poppins, sans-serif;
   background: url('backgroundpic.jpg') center center / cover no-repeat;
-  z-index: -1;
   color: white;
   display: flex;
   justify-content: center;
