@@ -10,7 +10,7 @@ body {
   font-family: Poppins, sans-serif;
   background: url('backgroundpic.jpg') center center / cover no-repeat;
   color: white;
-  display: block;
+  display: flex;
   justify-content: center;
   align-items: center;
   text-align: left;
@@ -35,7 +35,6 @@ body {
 @media (max-width: 768px) {
   .container {
     padding: 2.0em;
-    overflow-x: auto;
   }
 }
 
