@@ -70,6 +70,10 @@ body {
 
 /* Landscape (Scrollable Card, Top Aligned) */
 @media (max-width: 768px) and (orientation: landscape) {
+  html, body {
+  overflow-y: auto;
+  }
+  
   body {
     display: block;
     justify-content: flex-start;
