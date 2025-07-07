@@ -2,13 +2,13 @@ html, body {
   margin: 0;
   padding: 0;
   height: 100dvh;
-  width: 100dvw;
+  width: 100vw;
   overflow: hidden;
 }
 
 body {
   font-family: Poppins, sans-serif;
-  background: url('backgroundpic.jpg') no-repeat center center/cover;
+  background: url('backgroundpic.jpg') center center / cover no-repeat;
   color: white;
   display: flex;
   justify-content: center;
@@ -43,11 +43,15 @@ body {
   .container {
     overflow-x: hidden;
     overflow-y: auto;
-    height: 100dvh;
+    max-height: 90dvh;
+    max-width: 90vw;
     padding: 2.0em;
     margin: 1.0em;
     box-sizing: border-box;
     border-radius: 16px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
   }
 }
 
