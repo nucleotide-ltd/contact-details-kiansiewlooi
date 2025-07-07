@@ -34,7 +34,7 @@ body {
 }
 
 /* Portrait (iOS 16 Safe + Centered) */
-@media (max-width: 768px) and (orientation: portrait) and (max-height: 500px) {
+@media (max-width: 768px) and (orientation: portrait) {
 
   body {
     flex-direction: column;
@@ -69,7 +69,7 @@ body {
 }
 
 /* Landscape (Scrollable Card, Top Aligned) */
-@media (max-width: 768px) and (orientation: landscape) {
+@media (max-width: 768px) and (orientation: landscape) and (max-height: 500px) {
   body {
     display: block;
   }
