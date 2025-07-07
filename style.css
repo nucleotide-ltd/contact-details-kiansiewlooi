@@ -83,7 +83,6 @@ body {
     max-height: 100dvh;
     border-radius: 0;
     padding: 2em 1.5em;
-    overflow-x: auto;
     overflow-y: auto;
     box-sizing: border-box;
     display: block;
