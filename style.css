@@ -134,10 +134,10 @@ body {
 }
 
 h1 {
-  font-size: 1.2em;
+  font-size: 1.25em;
   font-weight: 600;
   text-align: center;
-  margin: 0.6em 0 0 0;
+  margin: 0.8em 0 0 0;
 }
 
 .subtitle {
@@ -167,13 +167,13 @@ h1 {
   flex-direction: column;
   align-items: flex-start;
   width: 100%;
-  gap: 0.8em;
+  gap: 1.0em;
 }
 
 .contact-item {
   display: flex;
   align-items: center;
-  gap: 0.8em;
+  gap: 1.0em;
   font-size: 1em;
   color: white;
 }
