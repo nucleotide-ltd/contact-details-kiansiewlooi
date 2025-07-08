@@ -24,7 +24,7 @@ body {
   width: 90%;
   max-width: 360px;
   padding: 1.2em 2em;
-  background: rgba(0, 0, 0, 0.65);
+  background: rgba(0, 0, 0, 0.4);
   border-radius: 20px;
   box-shadow: 0 8px 24px rgba(0, 0, 0, 0.4);
   box-sizing: border-box;
@@ -215,13 +215,31 @@ h1 {
   justify-content: center;
   gap: 0.6em;
   padding: 0.75em 1.5em;
-  border: 1.5px solid white;
   border-radius: 8px;
   background-color: rgba(255, 255, 255, 0.15);
+  background: linear-gradient(to right, #42A6E4, #3FF2FF, #00B03F); /* gradient border */
   color: white;
   font-size: 1em;
   text-decoration: none;
+  z-index: 0;
 }
+
+.download-button a::before {
+  content: "";
+  position: absolute;
+  top: -2px;
+  left: -2px;
+  right: -2px;
+  bottom: -2px;
+  z-index: -1;
+  background: linear-gradient(to right, #42A6E4, #3FF2FF, #00B03F); /* same as border */
+  border-radius: 12px;
+  padding: 2px;
+  -webkit-mask:
+    linear-gradient(#fff 0 0) content-box,
+    linear-gradient(#fff 0 0);
+  -webkit-mask-composite: xor;
+  mask-composite: exclude;
 
 .download-button a i {
   font-size: 1em;
