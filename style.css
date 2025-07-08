@@ -216,8 +216,7 @@ h1 {
   gap: 0.6em;
   padding: 0.75em 1.5em;
   border-radius: 8px;
-  border: 1.5px solid transparent;
-  position: relative;
+  border: 2.0px solid transparent;
   background-color: rgba(255, 255, 255, 0.15);
   border-image: linear-gradient(to right, #42A6E4, #3FF2FF, #00B03F) 1; /* your gradient */
   background-clip: padding-box;
