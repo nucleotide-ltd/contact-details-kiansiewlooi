@@ -235,7 +235,7 @@ h1 {
 }
 
 .icon-box {
-  background-color: rgba(255, 255, 255, 0.15);
+  background-color: rgba(255, 255, 255, 0);
   padding: 0.4em;
   border-radius: 6px;
   display: inline-flex;
