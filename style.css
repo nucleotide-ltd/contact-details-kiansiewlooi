@@ -209,16 +209,22 @@ h1 {
   justify-content: center;
 }
 
+.gradient-frame {
+  background: to right, #42A6E4, #3FF2FF, #00B03);  /* your border */
+  padding: 2.0px; /* ✅ precisely 1.5px border */
+  border-radius: 12px;
+  display: inline-block;
+}
+
+
 .download-button a {
   display: inline-flex;
   align-items: center;
   justify-content: center;
   gap: 0.6em;
   padding: 0.75em 1.5em;
-  border-radius: 8px;
-  border: 2.0px solid transparent;
+  border-radius: 10px;
   background-color: rgba(255, 255, 255, 0.15);
-  border-image: linear-gradient(to right, #42A6E4, #3FF2FF, #00B03F) 1; /* your gradient */
   background-clip: padding-box;
   color: white;
   font-size: 1em;
