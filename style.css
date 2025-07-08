@@ -209,6 +209,13 @@ h1 {
   justify-content: center;
 }
 
+.border-frame {
+  background: linear-gradient(to right, #42A6E4, #3FF2FF, #00B03F); /* your gradient */
+  padding: 2px;
+  border-radius: 8px;
+  display: inline-block;
+}
+
 .download-button a {
   display: inline-flex;
   align-items: center;
@@ -216,29 +223,15 @@ h1 {
   gap: 0.6em;
   padding: 0.75em 1.5em;
   border-radius: 8px;
-  position: relative
-  background: linear-gradient(to right, #42A6E4, #3FF2FF, #00B03F); /* gradient border */
+  border: none;
+  position: relative;
+  background-color: rgba(255, 255, 255, 0.15);
+  background-clip: padding-box;
   color: white;
   font-size: 1em;
   text-decoration: none;
   z-index: 1;
 }
-
-.download-button a::before {
-  content: "";
-  position: absolute;
-  top: 2px;
-  left: 2px;
-  right: 2px;
-  bottom: 2px;
-  z-index: -1;
-  background-color: rgba(255, 255, 255, 0.15);
-  border-radius: 8px;
-  -webkit-mask:
-    linear-gradient(#fff 0 0) content-box,
-    linear-gradient(#fff 0 0);
-  -webkit-mask-composite: xor;
-  mask-composite: exclude;
 
 .download-button a i {
   font-size: 1em;
