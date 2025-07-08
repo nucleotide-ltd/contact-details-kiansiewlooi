@@ -123,7 +123,7 @@ body {
 .profile-image {
   display: flex;
   justify-content: center;
-  margin: 0.4em 0.6em;
+  margin: 0.4em 0.5em;
 }
 
 .profile-image img {
@@ -210,7 +210,7 @@ h1 {
 }
 
 .gradient-frame {
-  background: linear-gradient(to right, #1C82C2, #3FF2FF, #00B03F);  /* your border */
+  background: linear-gradient(to right, #2397DF, #3FF2FF, #15FF69);  /* your border */
   padding: 2.0px; /* ✅ precisely 1.5px border */
   border-radius: 12px;
   display: inline-block;
@@ -225,7 +225,7 @@ h1 {
   gap: 0.6em;
   padding: 0.75em 1.5em;
   border-radius: 10.5px;
-  background-color: rgba(0, 0, 0, 0.85);
+  background-color: rgba(0, 0, 0, 0.80);
   color: white;
   font-size: 1em;
   text-decoration: none;
