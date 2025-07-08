@@ -210,7 +210,7 @@ h1 {
 }
 
 .gradient-frame {
-  background: to right, #42A6E4, #3FF2FF, #00B03);  /* your border */
+  background: linear-gradient(to right, #42A6E4, #3FF2FF, #37FF7E);  /* your border */
   padding: 2.0px; /* ✅ precisely 1.5px border */
   border-radius: 12px;
   display: inline-block;
