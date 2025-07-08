@@ -210,10 +210,11 @@ h1 {
 }
 
 .gradient-frame {
-  background: linear-gradient(to right, #42A6E4, #3FF2FF, #37FF7E);  /* your border */
+  background: linear-gradient(to right, #1C82C2, #3FF2FF, #00B03F);  /* your border */
   padding: 2.0px; /* ✅ precisely 1.5px border */
   border-radius: 12px;
   display: inline-block;
+  isolation: isolate;
 }
 
 
@@ -225,7 +226,6 @@ h1 {
   padding: 0.75em 1.5em;
   border-radius: 10.5px;
   background-color: rgba(255, 255, 255, 0.15);
-  background-clip: padding-box;
   color: white;
   font-size: 1em;
   text-decoration: none;
@@ -238,5 +238,5 @@ h1 {
   line-height: 1;
   color: white; /* ✅ Force icon color */
   background: none; /* ✅ Avoid inherited background */
-  z-index: 2;
+  isolation: isolate;
 }
