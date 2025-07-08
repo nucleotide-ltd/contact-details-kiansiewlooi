@@ -211,7 +211,7 @@ h1 {
 
 .border-frame {
   background: linear-gradient(to right, #42A6E4, #3FF2FF, #00B03F); /* your gradient */
-  padding: 2px;
+  padding: 0.75em 1.5em;
   border-radius: 8px;
   display: inline-block;
 }
