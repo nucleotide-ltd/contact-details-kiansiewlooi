@@ -54,8 +54,8 @@ body {
   }
 
   .profile-image img {
-    width: 100px;
-    height: 100px;
+    width: 90px;
+    height: 90px;
   }
 
   h1 {
@@ -118,7 +118,7 @@ body {
 .profile-image {
   display: flex;
   justify-content: center;
-  margin: 0.5em 0;
+  margin: 0.6em 0;
 }
 
 .profile-image img {
@@ -132,7 +132,7 @@ h1 {
   font-size: 1.2em;
   font-weight: 600;
   text-align: center;
-  margin: 0.3em 0 0 0;
+  margin: 0.3em 0 0.3em 0;
 }
 
 .subtitle {
